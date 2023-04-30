@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def render_page():  # put application's code here
-    link = get_payment_link()
-    return render_template('page.html', data=link)
+    # link = get_payment_link()
+    return render_template('page.html', data=get_payment_link())
 
 
 if __name__ == '__main__':
